@@ -1,0 +1,45 @@
+1. Permutations:
+              [1,2,3] different permutations with out dulicate 
+              1.             2              3
+            2.  3.         1.   3.      1.      2
+          3.     2.      3.      1.    2.        1
+          
+          for(int i=0;i<nums.length;i++){
+            if(path.contains(nums[i])) continue;
+              path.add(nums[i]);
+              helper(path,res)
+              path.remove(path.size()-1);
+          }
+      when the size of path equal to nums.length, return
+      
+2. Permutations II:
+          sort the array
+          [1,1,2] contains duplicate elements but we need to avoid same permutations in output.
+          We use boolean array to record the used status of each element.
+          when used[i] shows that you have used this element, then continue;
+          other situation is when you have use the 1st 1 ,when at 2nd 1's loop, you do not need to do it again. continue;
+          
+          for(int i=0;i<nums.length;i++){
+            if(used[i]==true || i>0 && nums[i]==nums[i-1] && used[i-1]==false) 
+                  continue;
+            path.add(nums[i]);
+            used[i]=true;
+            helper(nums,res,path,used);
+            used[i]=false;
+            path.remove(path.size()-1);
+            }
+3. Combinations:
+            need take care of same duplicate result in the output
+            if you use start index,then you can make sure there will be no search back
+4. Combinations sum:
+            sort the array first
+            need take care of same duplicate result-> i>0 && nums[i]==nums[i-1] continue
+            use start index to take care of the search back 
+5. Combinations sum II:
+            sort the array first
+            "find all unique combinations" = use start index to take care of the search back
+            need take care of same duplicate result
+            "Each number in candidates may only be used once in the combination."
+            == We use boolean array to record the used status of each element 
+            when used[i] shows that you have used this element, then continue;
+6. 
