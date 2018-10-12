@@ -1,0 +1,27 @@
+1. Two sum:
+        find two elements that sum is target
+        use hashmap to search for target-nums[i], if not exist, store nums[i],else found it
+        Time complexity: O(N)
+2. word pattern:
+        use the "map.put": which will return the previous value associated with key, 
+        or null if there was no mapping for key
+3. How many index till you get a higher element:
+        Use a stack can easily fulfill, when occur a higher number, you can pop all the index which is
+        smaller than the current number.
+4. Top K frequent element:
+        matter of frequency, you can use hashmap to get the frequency
+        Top n == sort by frequency-> use comparator -> Collections.sort(list,comparator)
+5. Goup string together:
+        Sort them to see if they meet specific pattern
+        Time Complexity of Sorting is O(NlogN)
+6.Longest substring without repeated character:
+        use hash set to record the longest substring from i to j
+        if repeated occur, remove charAt(i) i++ j not change continue searching
+        Time complexity is O(n)
+        Space Complexity is O(set.size())
+7. 4Sum(return # of pairs):
+        using HashMap to store sum of 2 lists, and for the other 2 lists, check if map.contains(target-sum)
+        Time Complexity:O(n^2)
+8. Subarray Sum Equal K:
+        Subarray can use prifix sum array, find (sum-target)
+        trick is you need to add 0 into map which has count=1
