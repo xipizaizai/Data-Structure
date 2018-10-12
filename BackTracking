@@ -121,3 +121,7 @@ private void backtrack(List<List<Integer>> list, List<Integer> tempList, int [] 
     }
 }
                 
+7. Palindrome partitioning:
+          partition means separate it into parts, we can use backtrack to find subsets
+          only addings is to check whether it is a palindrome
+          
