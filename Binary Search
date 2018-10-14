@@ -55,7 +55,7 @@
  5. Find minimum in Rotated sorted array:
         there will be two possibilities:
             1. the array is original order:
-            which is nums[start]<nums[end]  then return nums[start];
+            which is nums[start] < nums[end]  then return nums[start];
             
             2. the array is rotate:
             which has two parts:
@@ -64,6 +64,17 @@
                   else 
                      end = mid;
                   also check the last start and end index~ get a min one
+ 6. Search a 2D matrix:
+         only row is sorted in ascending order,so the whole matrix is a ascending array which makes it a 2D matrix
+         do it as an ordinary binary search
+         trick: 
+                 start & end pointer is the index, but you need to put it in the matrix[start/col_num][start%col_num]
+ 7. Search a 2D matrix II:
+         both row and column are in ascending order.
+         trick: start with right-upper element, if target is larger, then move down
+         else move left
+         Time complexity is O(m+n)
+         
  Math problem:
  ***** change it into long *****
  
