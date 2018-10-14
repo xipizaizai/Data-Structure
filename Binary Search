@@ -64,5 +64,16 @@
                   else 
                      end = mid;
                   also check the last start and end index~ get a min one
- 6. 
+ Math problem:
+ ***** change it into long *****
  
+ 1. Pow(x,n):
+         implement the function of Pow, using recursion, each time deal with whether n==0 or n<0
+         if n==0 then return 1;
+         if n<0 then change x into 1/x; n change to -n
+ 2. divide two integer:
+         using recursion
+         take care of the sign fist: if both is positive or both is negative: no need to change
+         take care of all corner case of divisor:
+                  if divisor < 0 change it to positive
+                  if dividen < divisor return 0                                              
