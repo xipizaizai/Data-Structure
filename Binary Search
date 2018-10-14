@@ -1,0 +1,68 @@
+1. Find Peak index in mountain array:
+         if mid element is the peak, then return;
+         else:
+            1. mid is on the uphill-> start = mid+1
+            2. mid is on the downhill-> end = mid-1
+2. Two sum II(input array is sorted):
+        if num[start]+num[end]==target return;
+        else
+              start++ or end--
+        Pay attention to while(start+1<end)
+        This will result in a final situation like: 
+                1,    2,   3
+              start  end
+        You need to check the last situation like this to see if this is the result
+3. Find the 1st and last position of a target:
+   Find 1st:
+       if(nums[mid]==target || nums[mid]>target)
+                end=mid;
+            else
+                start=mid;
+        }
+        if(nums[start]==target)
+            return start;
+        else if(nums[end]==target)
+            return end;
+        else 
+            return -1;
+            
+   Find Last:
+        if(nums[mid]==target || nums[mid]<target)
+                start=mid;
+            else
+                end=mid;
+        }
+        if(nums[end]==target)
+            return end;
+          else if(nums[start]==target)
+            return start;
+         else
+             return -1;
+4. Search in rotated sorted array:
+        there will be two parts where mid can be:
+        
+        larger half:
+                 nums[mid]>=nums[start];
+                 if(nums[mid]>target && target>=nums[start]) end = mid-1
+                 else 
+                 start = mid+1
+        smaller half:
+                 nums[mid]<=nums[end];
+                 if(nums[mid]<target && target<=nums[end]) start = mid+1
+                 else
+                 end = mid-1;
+        lastly, check start and end index!
+ 5. Find minimum in Rotated sorted array:
+        there will be two possibilities:
+            1. the array is original order:
+            which is nums[start]<nums[end]  then return nums[start];
+            
+            2. the array is rotate:
+            which has two parts:
+                  check nums[mid], if nums[mid]>start, then it is in larget part, then the minimum must in the other part
+                  -> start = mid;
+                  else 
+                     end = mid;
+                  also check the last start and end index~ get a min one
+ 6. 
+ 
