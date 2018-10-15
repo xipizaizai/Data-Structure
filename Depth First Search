@@ -18,4 +18,11 @@
         because this is assume it as a perfect binary tree, then just do two steps:
           1. root.left->root.right
           2. root.right->root.next.left
-6. 
+6. Populating Next Right Pointers in each node II:
+        For this question, it is not guaranteed the tree is complete tree, 
+        first you check whether the left node is not null:
+                     then check whether it is connect with root.right or next root.left/next root.right
+        second you check whether the right node is not null:
+                     then check whether it is connect with next root.left/next root.right
+
+        
