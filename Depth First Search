@@ -1,0 +1,21 @@
+1. Maximum Depth of Binary tree:
+       helper function return the maximum depth between left and right substree
+       using divide and conquer to record left and right
+ Time Complexity: O(N)
+
+2. Number of Islands:
+       four directions: start with the island ('1'), update surrounding islands to water.
+       Time Complexity:O(MN)
+3. Same Tree:
+        corner case: if p==q==null return true;
+                 if one of them is null or the val is different-> false
+        recursively do the left subtree and right subtree
+4. Max area of island:
+        different part from number of island is, this is ask for area of each island, count the 1's in helper fuction
+        corner case:
+        i < 0 || i >= m || j < 0 || j >= n || grid[i][j] == 0
+5. Populating Next Right Pointers in each node:
+        because this is assume it as a perfect binary tree, then just do two steps:
+          1. root.left->root.right
+          2. root.right->root.next.left
+6. 
