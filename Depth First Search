@@ -6,23 +6,73 @@
 2. Number of Islands:
        four directions: start with the island ('1'), update surrounding islands to water.
        Time Complexity:O(MN)
+       
 3. Same Tree:
         corner case: if p==q==null return true;
                  if one of them is null or the val is different-> false
         recursively do the left subtree and right subtree
+        
 4. Max area of island:
         different part from number of island is, this is ask for area of each island, count the 1's in helper fuction
         corner case:
         i < 0 || i >= m || j < 0 || j >= n || grid[i][j] == 0
+        
 5. Populating Next Right Pointers in each node:
         because this is assume it as a perfect binary tree, then just do two steps:
           1. root.left->root.right
           2. root.right->root.next.left
+          
 6. Populating Next Right Pointers in each node II:
         For this question, it is not guaranteed the tree is complete tree, 
         first you check whether the left node is not null:
                      then check whether it is connect with root.right or next root.left/next root.right
         second you check whether the right node is not null:
                      then check whether it is connect with next root.left/next root.right
-
+                     
+7. Convert sorted array to BST:
+        For BST, the root of the tree is the median of the sorted array, for left and right tree, recursively find
+        the median of the subarray, then you can build the tree
         
+8. Construct Binary Tree from Preorder and Inorder Traversal:
+        PreOrder has the root-left-right
+        Inorder has the left-root-right
+        So the root is the preOrder[0], then find the index of the root in the inorder, then left is in 0~index,
+        right is in index+1~end
+        and the root is always find in preorder array: left is prestart+1, right is prestart+(index-instart)+1
+    
+9. Balanced Binary Tree:
+        the concept of balanced tree is that for every node in the tree, the difference between the two subtrees are
+        nor greater than 1
+        So we need know each nodes left and right to see their diffence and check each time it returns a num. 
+                      if(root==null) 
+                            return 0;
+                      int left = helper(root.left);
+                      if(left==-1) 
+                            return -1;
+                      int right = helper(root.right);
+                      if(right==-1) 
+                            return -1;
+                      if(Math.abs(left-right)>1) 
+                          return -1;
+                      return Math.max(left,right)+1;
+10. Symmetric Tree:
+         Symmetric is a mirror of itself. helper function is needed:
+         not only check left.val and right.val
+         but also check left.left and right.right.val
+         also check left.right and right.left
+         
+11.Flatten Binary Tree to Linked List：
+       main idea is to get left part to the root.right and the last node of left's part connect the origin 
+       root.right, the last step is to make root.left null
+       
+                                   flatten(root.left)
+                                   flatten(root.right)
+                                   TreeNode left = root.left;
+                                   Treenode right = root.right;
+                                   root.left = null;
+                                   root.right = left;
+                                   while(root.right!=null)
+                                          root = root.right;
+                                   root.right = right;
+                                   
+12.
