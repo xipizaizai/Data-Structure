@@ -10,4 +10,14 @@
 3. Binary Tree Level Order Traversal II:
           level order traversal and reverse it
 
-4. 
+4. Course Schedule:
+          create a graph and a degree array which represent the level in the graph
+          Queue offer the node from the leaf node (degree==0)
+          then check the graph to see their neighbor whether there is degree==1, add to the queue
+          
+5. Binary Tree Right Side View:
+          level order traverse and every time add node right first, then you can make sure everytime, you
+          will first poll out the rightmost node of each level.
+          Add rightmost node into the list everytime you traverse a level
+
+6. 
