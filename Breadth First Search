@@ -1,0 +1,13 @@
+1. Binary Tree Level Order Traversal:
+          classic topic of BFS: use a queue to maintain a structure. 
+          for each level, get a size of that level and poll node out, add in level list
+          add each node's left and node's right into the queue for later poll out
+          
+2. Minimum Depth of Binary Tree:
+          use BFS to search level order, when you meet a node has no left and right child, return the level
+          or add their child to the queue and increment the level
+
+3. Binary Tree Level Order Traversal II:
+          level order traversal and reverse it
+
+4. 
