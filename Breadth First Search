@@ -2,6 +2,7 @@
           classic topic of BFS: use a queue to maintain a structure. 
           for each level, get a size of that level and poll node out, add in level list
           add each node's left and node's right into the queue for later poll out
+          
 2. Binary Tree Zigzag Level Order Traversal:
           
           the only difference from Q1 is that using the property of list.add(int index, int num) which
