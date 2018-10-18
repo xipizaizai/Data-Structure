@@ -4,7 +4,6 @@
           add each node's left and node's right into the queue for later poll out
           
 2. Binary Tree Zigzag Level Order Traversal:
-          
           the only difference from Q1 is that using the property of list.add(int index, int num) which
           can make the num in the first position of this list
           
