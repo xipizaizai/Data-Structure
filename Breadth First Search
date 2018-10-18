@@ -20,4 +20,36 @@
           will first poll out the rightmost node of each level.
           Add rightmost node into the list everytime you traverse a level
 
-6. 
+6. Word Ladder:
+          using BFS,two queues to process, first is current string, second is current distance.
+          use hashset to record dictionary
+          corner case:
+                     1. dictionary has no word
+                     2. endWord is not in dictionary
+          queue poll a string, 
+          if this mathces endWord, return cuurent distance.
+          else
+              change each index of this string with 26 character to check whether there is a match with dict.
+          if matched, add it into queue and add dist+1 in queue, remove this string from dict
+          
+7. Clone Graph:
+          use a queue and a map, map can map new node with old node! if deep copy then use map
+          queue is for searching for its neighbors, if map not contains this node, first made this node and its clone node
+          then map their neighbors to the new nodes
+          
+                               while(!queue.isEmpty()){
+                                UndirectedGraphNode N = queue.poll();
+                                for(UndirectedGraphNode nei:N.neighbors){
+                                    if(!map.containsKey(nei)){
+                                        map.put(nei,new UndirectedGraphNode(nei.label));
+                                        queue.offer(nei);
+                                    }
+                                    map.get(N).neighbors.add(map.get(nei));
+                                }
+                            }
+8.  Remove Invalid Parentheses:
+             because have no idea which one bracket to remove, so we try to remove each one and put the new string
+             into the queue to see if valid, the same as brute force
+             if the string poll from queue is valid, then skip all the change part
+             else
+              try to remove each index to see
