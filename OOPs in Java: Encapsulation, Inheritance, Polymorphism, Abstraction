@@ -1,0 +1,69 @@
+1. Encapsulation:
+
+Encapsulation in Java is a mechanism of wrapping the data (variables) and code acting on the data (methods) together as a single unit. In encapsulation, the variables of a class will be hidden from other classes, and can be accessed only through the methods of their current class. Therefore, it is also known as data hiding.
+
+2. Inheritance:
+
+Inheritance can be defined as the process where one class acquires the properties (methods and fields) of another. With the use of inheritance the information is made manageable in a hierarchical order.
+
+The class which inherits the properties of other is known as subclass (derived class, child class) and the class whose properties are inherited is known as superclass (base class, parent class).
+
+  2.1 Extends keyword
+  
+  extends is the keyword used to inherit the properties of a class. 
+                                      class Super {
+                                       .....
+                                       .....
+                                      }
+                                      class Sub extends Super {
+                                       .....
+                                       .....
+                                      }
+  2.2 Super Keyword
+  
+  The super keyword is similar to this keyword. Following are the scenarios where the super keyword is used.
+  It is used to differentiate the members of superclass from the members of subclass, if they have same names.
+  It is used to invoke the superclass constructor from subclass.
+
+3. Polymorphism:
+
+Polymorphism is the ability of an object to take on many forms. The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object.
+In other words, polymorphism allows you define one interface and have multiple implementations. 
+As we have seen in the above example that we have defined the method sound() and have the multiple implementations of it in the different-2 sub classes.
+EG:
+      public class Animal{
+         ...
+         public void sound(){
+            System.out.println("Animal is making a sound");   
+         }
+      }
+      
+        public class Horse extends Animal{
+        ...
+      @Override
+      public void sound(){
+          System.out.println("Neigh");
+      }
+  }
+  
+  public class Cat extends Animal{
+    ...
+    @Override
+    public void sound(){
+        System.out.println("Meow");
+    }
+}
+
+4. Abstraction:
+
+Data Abstraction may also be defined as the process of identifying only the required characteristics of an object ignoring the irrelevant details.The properties and behaviors of an object differentiate it from other objects of similar type and also help in classifying/grouping the objects.
+In java, abstraction is achieved by interfaces and abstract classes. We can achieve 100% abstraction using interfaces.
+
+  4.1 Abstract classes and Abstract methods :
+    An abstract class is a class that is declared with abstract keyword.
+    An abstract method is a method that is declared without an implementation.
+    An abstract class may or may not have all abstract methods. Some of them can be concrete methods
+    A method defined abstract must always be redefined in the subclass,thus making overriding compulsory OR either make subclass itself abstract.
+    Any class that contains one or more abstract methods must also be declared with abstract keyword.
+    There can be no object of an abstract class.That is, an abstract class can not be directly instantiated with the new operator.
+    An abstract class can have parametrized constructors and default constructor is always present in an abstract class.
