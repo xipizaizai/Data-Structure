@@ -206,3 +206,32 @@ a compiler or an interpreter is a program that converts program written in high-
  Answer:
 1. Main difference between .equals() method and == operator is that one is method and other is operator.
 2. We can use == operators for reference comparison (address comparison) and .equals() method for content comparison. In simple words, == checks if both objects point to the same memory location whereas .equals() evaluates to the comparison of values in the objects.
+
+*******27.Define class?******
+
+Answer:
+A class is a blue print from which individual objects are created. A class can contain fields and methods to describe the behavior of an object.
+
+******28.What is constructor?******
+
+Answer:
+Constructor gets invoked when a new object is created. Every class has a constructor. If we do not explicitly write a constructor for a class the java compiler builds a default constructor for that class.
+
+******29.What is an interface?******
+
+Answer:
+An interface is a collection of abstract methods. A class implements an interface, thereby inheriting the abstract methods of the interface.
+
+*****30. what is difference between extend and implement?******
+
+Answer:
+extends is for extending a class.
+implements is for implementing an interface
+
+The difference between an interface and a regular class is that in an interface you can not implement any of the declared methods. Only the class that "implements" the interface can implement the methods. 
+
+******31.Define Packages in Java?******
+
+Answer:
+A Package can be defined as a grouping of related types(classes, interfaces, enumerations and annotations ) providing access protection and name space management.
+
