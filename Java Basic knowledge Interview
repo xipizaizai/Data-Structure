@@ -1,0 +1,13 @@
+1. Why is Java called the ‘Platform Independent Programming Language’?
+
+Answer:
+Platform independence means that execution of your program does not dependent on type of operating system.java is both compiler(javac) and interpreter(jvm) based lauguage.source code is first compiled into byte code using javac compiler. This byte code can be easily converted to equivalent machine code using JVM.JVM(Java Virtual Machine) is available in all operating systems
+
+2. Explain Final keyword in java?
+
+Answer:
+Final keyword in java is used to restrict usage of variable,class and method.
+Variable: Value of Final variable is constant, you can not change it.
+Method: you can’t override a Final method.
+Class: you can’t inherit from Final class.
+
