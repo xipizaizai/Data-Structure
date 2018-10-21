@@ -7,7 +7,33 @@ Platform independence means that execution of your program does not dependent on
 
 Answer:
 Final keyword in java is used to restrict usage of variable,class and method.
+
 Variable: Value of Final variable is constant, you can not change it.
 Method: you can’t override a Final method.
 Class: you can’t inherit from Final class.
 
+3. When is the super keyword used?
+
+Answer:
+  super keyword is used to refer:
+
+immediate parent class constructor,
+immediate parent class variable,
+immediate parent class method.
+
+4. what is the difference between StringBuffer and String?
+
+Answer:
+String is an immutable calss, which means you can not modify its content once created.
+StringBuffer is a mutable calss, means you can change its content later.
+Whenever we alter content of String object, it creates a new string and refer to that, it does not modify the existing one.
+This is the reason that the performance with StringBuffer is better than with String.
+
+5. Difference in Set and List interface?
+
+Answer:
+Set and List both are child interface of Collection interface. There are following two main difference:
+    1. List can hold duplicate values but set does not allow this.
+    2. In List interface data is present in the order you inserted but in the case of Set insertion order is not preserved
+
+6. 
