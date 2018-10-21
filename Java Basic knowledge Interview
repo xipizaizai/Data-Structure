@@ -1,9 +1,9 @@
-1. Why is Java called the ‘Platform Independent Programming Language’?
+*****1. Why is Java called the ‘Platform Independent Programming Language’?
 
 Answer:
 Platform independence means that execution of your program does not dependent on type of operating system.java is both compiler(javac) and interpreter(jvm) based lauguage.source code is first compiled into byte code using javac compiler. This byte code can be easily converted to equivalent machine code using JVM.JVM(Java Virtual Machine) is available in all operating systems
 
-2. Explain Final keyword in java?
+*****2. Explain Final keyword in java?
 
 Answer:
 Final keyword in java is used to restrict usage of variable,class and method.
@@ -12,7 +12,7 @@ Variable: Value of Final variable is constant, you can not change it.
 Method: you can’t override a Final method.
 Class: you can’t inherit from Final class.
 
-3. When is the super keyword used?
+*****3. When is the super keyword used?
 
 Answer:
 The super keyword in java is a reference variable that is used to refer parent class objects. The keyword “super” came into the picture with the concept of Inheritance. Whenever you create the instance of subclass, an instance of parent class is created implicitly i.e. referred by super reference variable.
@@ -22,7 +22,7 @@ immediate parent class constructor,
 immediate parent class variable,
 immediate parent class method.
 
-4. what is the difference between StringBuffer and String?
+*****4. what is the difference between StringBuffer and String?
 
 Answer:
 String is an immutable calss, which means you can not modify its content once created.
@@ -30,21 +30,21 @@ StringBuffer is a mutable calss, means you can change its content later.
 Whenever we alter content of String object, it creates a new string and refer to that, it does not modify the existing one.
 This is the reason that the performance with StringBuffer is better than with String.
 
-5. Difference in Set and List interface?
+*****5. Difference in Set and List interface?
 
 Answer:
 Set and List both are child interface of Collection interface. There are following two main difference:
     1. List can hold duplicate values but set does not allow this.
     2. In List interface data is present in the order you inserted but in the case of Set insertion order is not preserved
 
-6. What is Override and what is overload? Can we overload or override static methods in java?
+*****6. What is Override and what is overload? Can we overload or override static methods in java?
 
 Answer:
   Override: related to run-time polymorphism. A subclass provides a specific implementation of a method in superclass ar runtime
   Overload: relate to compile timepolymorphism. This features allows different methods to have same time, but different signatures,especially number of input parameters and type of input parameters.
   we can overload the static method but not override static method in java.
   
-7. What is static in java?
+*****7. What is static in java?
 
 Answer:
 static is a non-access modifier in Java which is applicable for the following:
@@ -56,12 +56,12 @@ static is a non-access modifier in Java which is applicable for the following:
     They can only directly call other static methods.They can only directly access static data.They cannot refer to this or super in any way.
     nested classes
     
-8.When to use static variables and static methods?
+*****8.When to use static variables and static methods?
 
 Answer:
 Use the static variable for the property that is common to all objects.
 
-9. What are scope of variables in java?
+*****9. What are scope of variables in java?
 
 Answer:
   Member Variables (Class Level Scope) : 
@@ -74,7 +74,7 @@ Answer:
   Loop Variables (Block Scope) : 
   A variable declared inside pair of brackets “{” and “}” in a method has scope withing the brackets only.
 
-10. What is "this" keyword in java?
+*****10. What is "this" keyword in java?
 
 Answer:
   Within an instance method or a constructor, this is a reference to the current object — the object whose method or constructor is being called. You can refer to any member of the current object from within an instance method or a constructor by using this.
@@ -87,23 +87,23 @@ Usage of this keyword:
     Used to return the current class instance.
     Used to invoke current class method (implicitly)
 
-11. What is abstract & final in java?
+*****11. What is abstract & final in java?
 
 Answer:
 For classes, final is used to prevent inheritance whereas abstract classes depends upon their child classes for complete implementation. 
 In cases of methods, final is used to prevent overriding whereas abstract methods needs to be overridden in sub-classes.
 
-12.Which class is the superclass for every class ?
+*****12.Which class is the superclass for every class ?
 
 Answer:
 Object class
 
-13. What is object cloning?
+*****13. What is object cloning?
 
 Answer:
 Object cloning means to create an exact copy of the original object.
 
-14. Private VS Public VS Protected:
+******14. Private VS Public VS Protected:
 
 Answer:
   Private:
@@ -118,26 +118,26 @@ Classes, methods or data members which are declared as public are accessible fro
   protected:
 The methods or data members declared as protected are accessible within same package or sub classes in different package.
 
-15. How are Java objects stored in memory?
+******15. How are Java objects stored in memory?
 
 Answer:
 In Java, all objects are dynamically allocated on Heap. 
 In Java, when we only declare a variable of a class type, only a reference is created (memory is not allocated for the object). To allocate memory to an object, we must use new(). So the object is always allocated memory on heap 
 
-16.Difference between static and non-static methods, variables And explain their memory architecture as well?
+******16.Difference between static and non-static methods, variables And explain their memory architecture as well?
 
 Answer:
 1. you can call static method without creating any object e.g. Collections.sort(). This makes static method useful utility,  while you need to instantiate an object to call non static method in Java. 
 2. you can not override static method in Java. They are bonded during compile time using static binding.
 3. non static members are not accessible inside static context and you also need to create an object before calling a static method
 
-17.Why the main method is static in java?
+******17.Why the main method is static in java?
 
 Answer:
 static allows main() to be called before an object of the class has been created. 
 This is neccesary because main() is called by the JVM before any objects are made. Since it is static it can be directly invoked via the class.
 
-18. JVM is compiler in java to run your program, explain steps from writing your code to execution on machine?
+******18. JVM is compiler in java to run your program, explain steps from writing your code to execution on machine?
 
 step1:Compilation
 First, the source ‘.java’ file is passed through the compiler, which then encodes the source code into a machine independent encoding, known as Bytecode.
@@ -146,7 +146,7 @@ step2: Execution
 
 The class files generated by the compiler are independent of the machine or the OS, which allows them to be run on any system. To run, the main class file (the class that contains the method main) is passed to the JVM, and then goes through three main stages before the final machine code is executed.
 
-19. What is heap memory allocation in java? Explain difference between stack and heap memory allocation in java?
+******19. What is heap memory allocation in java? Explain difference between stack and heap memory allocation in java?
 
 Answer:
 To run an application in an optimal way, JVM divides memory into stack and heap memory. Whenever we declare new variables and objects, call new method, declare a String or perform similar operations, JVM designates memory to these operations from either Stack Memory or Heap Space.
@@ -156,3 +156,53 @@ Stack Memory in Java is used for static memory allocation and the execution of a
 
         b) Heap Space in Java:
 Heap space in Java is used for dynamic memory allocation for Java objects and JRE classes at the runtime. New objects are always created in heap space and the references to this objects are stored in stack memory.
+
+******20. What will be the result If java set main method to private?
+
+Answer:
+Yes, it will compile. But it wil not run as entry point of the program.
+Java looks for the public main method signature. If any of the modifiers is different, then it wil assume it as some other method.
+
+******21. What is difference between "break" and "continue"?
+
+Answer:
+break leaves a loop, continue jumps to the next iteration.
+
+******22.Write all possible syntax of for loop?
+
+Answer:
+
+Syntax 1: 
+        for (initialization condition; testing condition; 
+                              increment/decrement)
+        {
+            statement(s)
+        }
+Syntax 2:
+It is inflexible and should be used only when there is a need to iterate through the elements in sequential manner without knowing the index of currently processed element.
+
+        for (T element:Collection obj/array)
+        {
+            statement(s)
+        }
+******23.What are the difference between while and for loop? And explain the cases where which one suits better?
+
+Answer:
+The key difference between the two is organization between them, if you were going to increase to 10 it'd be a lot cleaner and more readable to use a for statement, but on the other hand if you were to use an existing variable in your program in your loop parameters it'd be cleaner to just wright a while loop. In the For loop you MUST create a new variable, thats not true for the While loop.
+
+******24.What is interpreter in java? And difference between compilation and interpretation in java?
+
+Answer:
+a compiler or an interpreter is a program that converts program written in high-level language into machine code understood by the computer.
+
+******25.Difference between parameters and arguments in java?
+
+ Answer:
+ Parameter-the formal variable definitions in the function signature
+ Argument-the actual value you pass in while calling the function.
+ 
+ ******26.Difference between == and equals() method in Java?
+ 
+ Answer:
+1. Main difference between .equals() method and == operator is that one is method and other is operator.
+2. We can use == operators for reference comparison (address comparison) and .equals() method for content comparison. In simple words, == checks if both objects point to the same memory location whereas .equals() evaluates to the comparison of values in the objects.
