@@ -1,0 +1,24 @@
+******* HashMap vs Hashtable:*******
+
+1. HashMap is non synchronized. It is not-thread safe and can’t be shared between many threads without proper synchronization code whereas Hashtable is synchronized. It is thread-safe and can be shared with many threads.
+2. HashMap allows one null key and multiple null values whereas Hashtable doesn’t allow any null key or value.
+3. HashMap is generally preferred over HashTable if thread synchronization is not needed
+
+****** ArrayList vs LinkedList******
+
+1. Insertions are easy and fast in LinkedList as compared to ArrayList because there is no risk of resizing array and copying content to new array if array gets full which makes adding into ArrayList of O(n) in worst case, while adding is O(1) operation in LinkedList in Java. ArrayList also needs to be update its index if you insert something anywhere except at the end of array.
+2. Removal also better in LinkedList than ArrayList due to same reasons as insertion.Remove an element in ArrayList is O(n)
+3. LinkedList has more memory overhead than ArrayList because in ArrayList each index only holds actual object (data) but in case of LinkedList each node holds both data and address of next and previous node.
+4. Both LinkedList and ArrayList require O(n) time to find if an element is present or not. However we can do Binary Search on ArrayList if it is sorted and therefore can search in O(Log n) time.
+
+****** StringBuffer vs StrigBuilder******
+
+StringBuffer is mutable means one can change the value of the object . The object created through StringBuffer is stored in the heap . StringBuffer  has the same methods as the StringBuilder , but each method in StringBuffer is synchronized that is StringBuffer is thread safe . 
+
+StringBuilder  is same as the StringBuffer , that is it stores the object in heap and it can also be modified . The main difference between the StringBuffer and StringBuilder is that StringBuilder is also not thread safe. 
+StringBuilder is fast as it is not thread safe .  
+
+****** Stack vs Queue*******
+
+Stacks and queues have very specific purposes. Stacks are last in, first out data structure (LIFO), while queues are first in, first out (FIFO).
+
