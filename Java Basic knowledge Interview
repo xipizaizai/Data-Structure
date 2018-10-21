@@ -36,4 +36,58 @@ Set and List both are child interface of Collection interface. There are followi
     1. List can hold duplicate values but set does not allow this.
     2. In List interface data is present in the order you inserted but in the case of Set insertion order is not preserved
 
-6. 
+6. What is Override and what is overload? Can we overload or override static methods in java?
+
+Answer:
+  Override: related to run-time polymorphism. A subclass provides a specific implementation of a method in superclass ar runtime
+  Overload: relate to compile timepolymorphism. This features allows different methods to have same time, but different signatures,especially number of input parameters and type of input parameters.
+  we can overload the static method but not override static method in java.
+  
+7. What is static in java?
+
+Answer:
+static is a non-access modifier in Java which is applicable for the following:
+
+    blocks
+    variables:
+    When a variable is declared as static, then a single copy of variable is created and shared among all objects at class level. Static variables are, essentially, global variables. All instances of the class share the same static variable.
+    methods:
+    They can only directly call other static methods.They can only directly access static data.They cannot refer to this or super in any way.
+    nested classes
+    
+8.When to use static variables and static methods?
+
+Answer:
+Use the static variable for the property that is common to all objects.
+
+9. What are scope of variables in java?
+
+Answer:
+  Member Variables (Class Level Scope) : 
+  The member variables must be declared inside class (outside any function). They can be directly accessed anywhere in class
+  
+  Local Variables (Method Level Scope) : 
+  Variables declared inside a method have method level scope and can’t be accessed outside the method.
+  Note : Local variables don’t exist after method’s execution is over.
+  
+  Loop Variables (Block Scope) : 
+  A variable declared inside pair of brackets “{” and “}” in a method has scope withing the brackets only.
+
+10. What is "this" keyword in java?
+
+Answer:
+  Within an instance method or a constructor, this is a reference to the current object — the object whose method or constructor is being called. You can refer to any member of the current object from within an instance method or a constructor by using this.
+Usage of this keyword:
+
+    Used to refer current class instance variable.
+    To invoke current class constructor.
+    It can be passed as an argument in the method call.
+    It can be passed as argument in the constructor call.
+    Used to return the current class instance.
+    Used to invoke current class method (implicitly)
+
+11. What is abstract & final in java?
+
+Answer:
+For classes, final is used to prevent inheritance whereas abstract classes depends upon their child classes for complete implementation. 
+In cases of methods, final is used to prevent overriding whereas abstract methods needs to be overridden in sub-classes.
