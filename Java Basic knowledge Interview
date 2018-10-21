@@ -15,7 +15,8 @@ Class: you can’t inherit from Final class.
 3. When is the super keyword used?
 
 Answer:
-  super keyword is used to refer:
+The super keyword in java is a reference variable that is used to refer parent class objects. The keyword “super” came into the picture with the concept of Inheritance. Whenever you create the instance of subclass, an instance of parent class is created implicitly i.e. referred by super reference variable.
+super keyword is used to refer:
 
 immediate parent class constructor,
 immediate parent class variable,
@@ -91,3 +92,41 @@ Usage of this keyword:
 Answer:
 For classes, final is used to prevent inheritance whereas abstract classes depends upon their child classes for complete implementation. 
 In cases of methods, final is used to prevent overriding whereas abstract methods needs to be overridden in sub-classes.
+
+12.Which class is the superclass for every class ?
+
+Answer:
+Object class
+
+13. What is object cloning?
+
+Answer:
+Object cloning means to create an exact copy of the original object.
+
+14. Private VS Public VS Protected:
+
+Answer:
+  Private:
+  The methods or data members declared as private are accessible only within the class in which they are declared.
+  Any other class of same package will not be able to access these members.
+  Top level Classes or interface can not be declared as private because private means “only visible within the enclosing class”.protected means “only visible within the enclosing class and any subclasses”
+  
+  public:
+The public access modifier has the widest scope among all other access modifiers.
+Classes, methods or data members which are declared as public are accessible from every where in the program. There is no restriction on the scope of a public data members.
+
+  protected:
+The methods or data members declared as protected are accessible within same package or sub classes in different package.
+
+15. How are Java objects stored in memory?
+
+Answer:
+In Java, all objects are dynamically allocated on Heap. 
+In Java, when we only declare a variable of a class type, only a reference is created (memory is not allocated for the object). To allocate memory to an object, we must use new(). So the object is always allocated memory on heap 
+
+16.Difference between static and non-static methods, variables And explain their memory architecture as well?
+
+Answer:
+1. you can call static method without creating any object e.g. Collections.sort(). This makes static method useful utility,  while you need to instantiate an object to call non static method in Java. 
+2. you can not override static method in Java. They are bonded during compile time using static binding.
+3. non static members are not accessible inside static context and you also need to create an object before calling a static method
