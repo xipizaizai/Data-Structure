@@ -235,3 +235,12 @@ The difference between an interface and a regular class is that in an interface 
 Answer:
 A Package can be defined as a grouping of related types(classes, interfaces, enumerations and annotations ) providing access protection and name space management.
 
+******32.multiple Inheritance******
+
+Answer:
+Multiple Inheritance is a feature of object oriented concept, where a class can inherit properties of more than one parent class.
+Java can not support Multiple inheritance
+
+
+
+
