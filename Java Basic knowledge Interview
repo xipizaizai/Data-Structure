@@ -278,3 +278,9 @@ Answer:
 
 Answer:
 java.io package 
+
+******40.Multithread in java******
+
+Multithreading is a Java feature that allows concurrent execution of two or more parts of a program for maximum utilization of CPU. Each part of such program is called a thread. So, threads are light-weight processes within a process.
+Ready, running and sleeping are three states that a thread can be in during its life cycle
+
