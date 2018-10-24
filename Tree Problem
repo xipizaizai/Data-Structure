@@ -3,4 +3,11 @@
       recursion:
       recursively start with processing node.left, add root.val into list, and processing node.right;
       
-2. 
+2. Convert Sorted Array to BST:
+      BST has property of left child <root<right child. So find the medium element to be the root and recursion left and right child
+
+3. Convert Sorted LinkeList to BST:
+      Same idea with above question, but how to find the medium node in LinkedList? use fast and slow pointer to get medium by fast = fast.next.next; slow = slow.next;
+      then the slow pointer is the medium node, and use this method recursively.
+
+4. 
