@@ -1,0 +1,6 @@
+1. Binary Tree Inorder Traversal:
+      Can solve using recursion and iterative,iterative way is to use stack, keep adding the left node and pop a node and it's right node into the stack.
+      recursion:
+      recursively start with processing node.left, add root.val into list, and processing node.right;
+      
+2. 
