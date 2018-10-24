@@ -1,0 +1,19 @@
+一： Palindrome questions:
+    1. Valid Palindrome:
+        Basic idea of checking Palindrome is to have two pointers pointing start and end of the string, 
+        while(start<end), if not equal then is not valid.
+        For this one, the string has not only chacters, so use s.toLowerCase().replaceAll("[^a-z0-9]", "");
+        which is the method of changing all the character except a-z 0-9
+    
+    2. Valid Palindrome II:
+        Basic idea also has to check whether it is a palindrome, but for this question, you can delete one character at most,
+        So you can have to pointers also to check equality and when it is not equal, then check:
+                              isPalindrome(s,l,r-1) || isPalindrome(s,l+1,r)
+        Only cost O(N)time and O(1)space.
+        
+    3. Find the closest Palindrome:
+        given the number in string formatted,find the closest integer (not including itself), which is a palindrome.
+        Basic idea:
+        The cloest one either in larger half or smaller half, so we divide it into two parts
+        
+    
