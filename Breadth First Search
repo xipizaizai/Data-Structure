@@ -57,3 +57,8 @@
              if the string poll from queue is valid, then skip all the change part
              else
               try to remove each index to see
+
+10. Walls and Gates:
+             instead of starting from empty rooms, start from gates,
+             using a queue to store the position of the cell and if not used before, update it distance and add into queue.
+             
