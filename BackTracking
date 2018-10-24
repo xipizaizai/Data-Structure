@@ -42,6 +42,18 @@
             "Each number in candidates may only be used once in the combination."
             == We use boolean array to record the used status of each element 
             when used[i] shows that you have used this element, then continue;
+            
+5.* Combination Sum IV:
+            Given an integer array with all positive numbers and no duplicates, find the number of possible combinations         that add up to a positive integer target.
+            Then it is the same as need unique combinations
+            But this question needs Dynamic Programming!
+            think as the last time, need one more element to be the target, then this element can be anyone
+            then we can also use memorization to record pre calculation result.
+            
+        Follow up:
+        if negative elements exist, we need to limit the length of the combination result.
+        
+        
 6. Subset:
             each element can have the choice of add or not add
             so:
