@@ -74,5 +74,3 @@
                                    while(root.right!=null)
                                           root = root.right;
                                    root.right = right;
-                                   
-12.
