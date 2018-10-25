@@ -10,4 +10,9 @@
       Same idea with above question, but how to find the medium node in LinkedList? use fast and slow pointer to get medium by fast = fast.next.next; slow = slow.next;
       then the slow pointer is the medium node, and use this method recursively.
 
-4. 
+4. Serialize and Deserialize BST: 
+      This question is typical, using queue data structure to store nodes and get nodes in level order traverse.
+      for Serialize, then using level order traverse. remember if child is null, add null into the stringBuilder
+      for deserialize,add nodes in the queue in level order, for each level ,use another queue to store the element and then make the first queue each time equal to this second queue
+
+5. 
