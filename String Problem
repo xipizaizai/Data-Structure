@@ -16,4 +16,14 @@
         Basic idea:
         The cloest one either in larger half or smaller half, so we divide it into two parts
         
+二：Dynamic Programming in String:
+    1. Word Break:
+        return the boolean type,find whether string can be separated by the words in dictionary.
+        boolean DP to see that each index whether is true then means the substring before that index is found in dict.
+        if(dp[j]==true && substring(j,i) in dict) then dp[i]=true!!
+   
+    2. Word Break II:
+         Using Word Break I to check whether the string can be separated.
+         And using DFS BACKTRACK to see all the combination of the result
+         
     
