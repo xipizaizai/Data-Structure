@@ -18,4 +18,10 @@
 5. Binary Search Tree Iterator:
       pop nodes in ascending order: So we need a methon called pushAllNode(TreeNode root). push all the left child into the stack, everytime when check the next node, then pop it out and push all of its right child into the stack
       
-6.
+6. Binary Tree Maximum Path Sum:
+      path sum from anynode to anynode:
+      what is returned in each recursion: Math.max(left,right)+node.val
+      finally, the last node will be left(maximum)+node.val+right(maximum)
+      Trick part: maybe has negative node value, so each time:
+                  int left = Math.max(0,helper(root.left));
+                  int right = Math.max(0,helper(root.right));
