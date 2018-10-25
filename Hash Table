@@ -25,3 +25,6 @@
 8. Subarray Sum Equal K:
         Subarray can use prifix sum array, find (sum-target)
         trick is you need to add 0 into map which has count=1
+9. Maximum Size Subarray Sum Equals k:
+        which is follow up of the question above, remember to use presum, and if sum is not contained, store the sum into map,but if sum is already exist in the map, do not update the sum because it maybe larger than now.
+        
