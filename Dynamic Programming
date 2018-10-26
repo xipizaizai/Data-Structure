@@ -1,0 +1,15 @@
+1. Burst Balloons: O(n^3)
+      
+      instead of divide the problem by the first balloon to burst, we divide the problem by the last balloon to burst.
+      Why is that? Because only the first and last balloons we are sure of their adjacent balloons before hand!
+      For the first we have nums[i-1]*nums[i]*nums[i+1] for the last we have nums[-1]*nums[i]*nums[n].
+      OK. Think about n balloons if i is the last one to burst, what now?
+      We can see that the balloons is again separated into 2 sections. But this time since the balloon i is the last balloon
+      of all to burst, the left and right section now has well defined boundary and do not affect each other! Therefore we can
+      do either recursive method with memoization or dp.
+      Take care of the three loops for this question: start, len, end and i which is the balloon you want to burst:
+                      start=0;start<n-len;start++
+                      end = start+len
+                      i = start+1;i<end;i++
+2. 
+    
