@@ -25,5 +25,8 @@
     2. Word Break II:
          Using Word Break I to check whether the string can be separated.
          And using DFS BACKTRACK to see all the combination of the result
-         
+三：Valid Parentheses:
+    1. Basic valid parentheses:
+        using stack to store the opposite char and check
+    
     
