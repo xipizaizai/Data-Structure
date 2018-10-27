@@ -28,5 +28,9 @@
 三：Valid Parentheses:
     1. Basic valid parentheses:
         using stack to store the opposite char and check
-    
+
+String problem:
+    1. Reverse Words in a String:
+        take care of leading blank spaces and using s.trim().split("\\s+")
+    2. 
     
