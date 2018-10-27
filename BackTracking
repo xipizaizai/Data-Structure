@@ -28,6 +28,12 @@
             used[i]=false;
             path.remove(path.size()-1);
             }
+2.变种： Next Permutation:O(n)
+            This is not a classic permutation question, just array
+            Find the first pair which nums[i]<nums[i+1]
+            then find the first number from the end of the array which nums[index]>nums[i],swap
+            then reverse the array from the i+1 to the end
+            
 3. Combinations:
             need take care of same duplicate result in the output
             if you use start index,then you can make sure there will be no search back
