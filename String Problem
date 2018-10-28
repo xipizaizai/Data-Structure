@@ -32,5 +32,10 @@
 String problem:
     1. Reverse Words in a String:
         take care of leading blank spaces and using s.trim().split("\\s+")
-    2. 
+    2. Longest Common Prefix:O(m*m*n)
+        First sort the array of string, make the perfix in order, then check the first one with the last one,check in worst case of (length of fist string)time.
+        use the API of string.indexOf(string) which will return the first index that appear string in origin string, else return -1
+        if return of that is not 0 then induct the prefix length by one.
+        The time complexity of it is first sort cost nlogn+m*indexOf cost O(m*n)= O(m*m*n)
+    3. 
     
