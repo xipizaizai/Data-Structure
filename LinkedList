@@ -53,4 +53,6 @@
 9. Rotate List:
         find the node which one to cut the linked list and connect it to the head,
         find the after tail and connect to the Null
-     
+10.Add two NumbersI:
+        Build a new linkedList and each time add two number on both linkedList and to see if there are any carry.
+11.
