@@ -34,5 +34,10 @@ Worst case:O(mn)
 8. Two Sum IV - Input is a BST: O(n)
       the idea is that: BST has properties that inorder is a sorted array.
       So first, using inorder traverse,get the inorder list of element and find the sum using two pointers.
-      
+
+9. Diameter of Binary Tree:O(n)
+      the idea is that get the maximum left child length and maximum right child length
+      so for helper fuction, return the maxmum of (left,right)+1 to the parent node.
+      then the final result is the maximum through all child.
+10.
 
