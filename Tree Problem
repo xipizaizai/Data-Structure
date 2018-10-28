@@ -31,4 +31,8 @@
       Or you can do it iteratively, use a queue to store all the root into the queue and check if any node can be the same root with the substree t.
 Worst case:O(mn)
 
-8. 
+8. Two Sum IV - Input is a BST: O(n)
+      the idea is that: BST has properties that inorder is a sorted array.
+      So first, using inorder traverse,get the inorder list of element and find the sum using two pointers.
+      
+
