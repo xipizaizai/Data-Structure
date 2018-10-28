@@ -20,4 +20,8 @@
       idea is that can not rob adjacent house, then the induction rule is: dp[i]=Math.max(dp[i-1],dp[i-1]+nums[i])
       Pay attention to the limitation that: dp[i]represent the max money for i houses, then dp[0]=nums[0],dp[1]=Max(nums[0],nums[1])!
       
-4.
+4.Maximal Square:O(mn)
+      
+      idea is using dynamic programming, whenever met a 1 in original matrix, then check the left,upleft,up to get the min of that plus one. finally, after filling the whole matrix, find the maximum one among whole mn nodes
+      
+
