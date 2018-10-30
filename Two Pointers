@@ -1,3 +1,9 @@
 1. Reverse Vowels of a String O(n)+O(1):
     idea is using two pointers, when met the vowel char, swap them and keep finding. use stack can make the search in O(1)time, and the space complexity is O(1) because of using two pointers.
-2. 
+    
+2. Candy: O(n)
+    idea is to find the minimum sum of candy, the better idea is to create two arrays fill with one. And linear scan input array and if neighbor is greater, then add one more
+    you go from left to right and right to left- in total 2 pass and then for two arrays, each element will get the max one as the final output.
+    
+3. 
+    
