@@ -30,3 +30,8 @@
         
 10. First Unique Character in a String:O(n)
         use int array with 256 size which can contains more characters, and two passes of array. Find the character with frequency 1
+        
+11. Remove Duplicate Letters: O(n)
+        Idea is to find the smaller lexiorder character but need to meet the need of still have previous letters in rest of the array. So when we want to maintain a structure which can peek previous chacters, we need stack! 
+        use visited boolean array to skip already visited char and use int[]count = new int[256] to record the frequency of the char: to see that there still have chars in the rest of the array so that we can pop it out.
+        then use stringbuilder to append all the chars in the stack.
