@@ -1,0 +1,6 @@
+1. Meeting rooms II:O(nlogn)
+    idea is to find their intervals and merge them, then find out the size of the priorityqueue = the # of rooms needed
+    
+2. Merge Intervals:O(nlogn)
+    the same idea with meeting rooms II, basic is merge intervals, use min heap, sort all intervals using start index, check if end index can be merged
+
