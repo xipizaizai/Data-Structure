@@ -88,3 +88,8 @@
          take care of all corner case of divisor:
                   if divisor < 0 change it to positive
                   if dividen < divisor return 0                                              
+Hard Question:
+
+1. Median of Two Sorted Arrays: O(log(m+n))
+         the idea is to find median of two sorted array, using binary search, each time compare A[mid] and B[mid]. If A>B, then we know that the median is at the right side of A[mid] and left side of B[mid], other way also.
+         Then each time remove k/2 length of searching area.
