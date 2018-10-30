@@ -35,3 +35,5 @@
         Idea is to find the smaller lexiorder character but need to meet the need of still have previous letters in rest of the array. So when we want to maintain a structure which can peek previous chacters, we need stack! 
         use visited boolean array to skip already visited char and use int[]count = new int[256] to record the frequency of the char: to see that there still have chars in the rest of the array so that we can pop it out.
         then use stringbuilder to append all the chars in the stack.
+12.Min stack: each operation is O(1)
+        idea is to get min of the whole stack, so that using only one stack and record the min value using a integer, each time you found a smaller one than min, update min and push min into stack then push element into stack. when pop the thing out,if the element on top is min, then after pop it, you should update min value with the value beneath it and then pop it.
