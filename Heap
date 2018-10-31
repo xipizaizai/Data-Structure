@@ -4,3 +4,10 @@
 2. Merge Intervals:O(nlogn)
     the same idea with meeting rooms II, basic is merge intervals, use min heap, sort all intervals using start index, check if end index can be merged
 
+3. Sliding Window Maximum:O(nlogk)-> which has better solution with O(n)
+    using heap which is max heap to maintain a k sized heap. Finding the maximum element in each interval.
+    first add k element into the heap, when moving the interval, then poll the leftmost element and offer the rightmost element into the heap, and store the top element into the final list.
+    *******O(n) solution *******
+    using two array, wich record the maximum element so far from left to right and from right to left, when meet the i%k==0 element, reset the element as it original value.
+    Then finally, compare right[i] with left(i+k-1) in the loop when i+k<=nums.length
+4. 
