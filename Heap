@@ -9,5 +9,9 @@
     first add k element into the heap, when moving the interval, then poll the leftmost element and offer the rightmost element into the heap, and store the top element into the final list.
     *******O(n) solution *******
     using two array, wich record the maximum element so far from left to right and from right to left, when meet the i%k==0 element, reset the element as it original value.
-    Then finally, compare right[i] with left(i+k-1) in the loop when i+k<=nums.length
-4. 
+   Then finally, compare right[i] with left(i+k-1) in the loop when i+k<=nums.length
+   
+4. The Skyline Problem：O(nlogn)
+    idea is to sort all start node of a building and end node of a building with their height. set the start height negative, the end height positive. use a priorityqueue(max heap) to record the height, when changed, record that start and height to the result. why use max heap? because when there are overlap buildings,only care about the highest one.
+
+5. 
