@@ -37,3 +37,8 @@
         then use stringbuilder to append all the chars in the stack.
 12.Min stack: each operation is O(1)
         idea is to get min of the whole stack, so that using only one stack and record the min value using a integer, each time you found a smaller one than min, update min and push min into stack then push element into stack. when pop the thing out,if the element on top is min, then after pop it, you should update min value with the value beneath it and then pop it.
+        
+13. Longest Consecutive Sequence:O(n)
+       First turn the input into a set of numbers. That takes O(n) and then we can ask in O(1) whether we have a certain number.Then go through the numbers. If the number x is the start of a streak (i.e., x-1 is not in the set), then test y = x+1, x+2, x+3, ... and stop at the first number y not in the set. The length of the streak is then simply y-x and we update our global best with that. Since we check each streak only once, this is overall O(n).
+        
+
