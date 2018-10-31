@@ -143,3 +143,9 @@ private void backtrack(List<List<Integer>> list, List<Integer> tempList, int [] 
           partition means separate it into parts, we can use backtrack to find subsets
           only addings is to check whether it is a palindrome
           
+8. Generate Parentheses:
+          classic backtracking problem and can save the step of check it validation. just check the number of close and open bracket
+     
+          
+          
+          
