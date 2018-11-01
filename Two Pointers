@@ -11,6 +11,10 @@
 4. Substring with Concatenation of All Words:O(mn)
     Idea is to use sliding window, which has the length of words.length and use hashMap to see if the substrin contains all the element in the wordlist. if yes then add the index into the result.
     Remind of copy of hashmap because every time need to check whether new substring contains.
+    
+5. Minimum Window Substring:O(n)
+    The idea is the same with minimum size subarray sum, use two pointers, first have a map to record all the words need to be contained, then move fast pointer when all the words are contained, move slow until not all the words contained, update the minimum length. then keep moving fast to find the next state when all words contained.
 
+6. 
 
     
