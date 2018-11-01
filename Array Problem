@@ -3,4 +3,10 @@
     1. Find All Numbers Disappeared in an Array: O(n),O(1)space
       because the array is from 1~size of num, then i can use this, we iterate through the input array and mark elements as negative using nums[nums[i] -1] = -nums[nums[i]-1]. In this way all the numbers that we have seen will be marked as negative. In the second iteration, if a value is not marked as negative, it implies we have never seen that index before, so just add it to the return list.
       
+二. Sort:
+    1. wiggle sort:O(n)
+      Idea is that using swap, 
+                  If i is odd, then nums[i] >= nums[i - 1];
+                  If i is even, then nums[i] <= nums[i - 1].
+      use swap when not meeting the two conditions
     2. 
