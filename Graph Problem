@@ -4,4 +4,6 @@
           1. # of 'X' is always one more than # of 'O'
           2. when rol or col or diagonal or antidiagonal reaches three, then one of palyer has win
           3. if X is win, then turn==1 || O wins, then turn = 0
-2. 
+
+2.  Valid Square:
+      idea is to use the property of a square, diagonal length = sqrt(2)*side.
