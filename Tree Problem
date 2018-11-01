@@ -13,7 +13,7 @@
 4. Serialize and Deserialize BST: 
       This question is typical, using queue data structure to store nodes and get nodes in level order traverse.
       for Serialize, then using level order traverse. remember if child is null, add null into the stringBuilder
-      for deserialize,add nodes in the queue in level order, for each level ,use another queue to store the element and then make the first queue each time equal to this second queue
+      for deserialize,add nodes in the queue in level order, for each level ,use another queue to store the element's children and then make the first queue each time equal to this second queue
 
 5. Binary Search Tree Iterator:
       pop nodes in ascending order: So we need a methon called pushAllNode(TreeNode root). push all the left child into the stack, everytime when check the next node, then pop it out and push all of its right child into the stack
