@@ -8,5 +8,9 @@
 3. Minimum Size Subarray Sum:O(n)
     Idea is to use 2 pointers, sum the numbers from i to j until it is larger than sum, then i++ and sum-=nums[i], keep finding, after finding all the elements in the array, get the minimum one.
 
-4. 
+4. Substring with Concatenation of All Words:O(mn)
+    Idea is to use sliding window, which has the length of words.length and use hashMap to see if the substrin contains all the element in the wordlist. if yes then add the index into the result.
+    Remind of copy of hashmap because every time need to check whether new substring contains.
+
+
     
