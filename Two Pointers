@@ -5,5 +5,8 @@
     idea is to find the minimum sum of candy, the better idea is to create two arrays fill with one. And linear scan input array and if neighbor is greater, then add one more
     you go from left to right and right to left- in total 2 pass and then for two arrays, each element will get the max one as the final output.
     
-3. 
+3. Minimum Size Subarray Sum:O(n)
+    Idea is to use 2 pointers, sum the numbers from i to j until it is larger than sum, then i++ and sum-=nums[i], keep finding, after finding all the elements in the array, get the minimum one.
+
+4. 
     
