@@ -75,6 +75,9 @@
          else move left
          Time complexity is O(m+n)
          
+ 8. Guess number:O(logn)
+         Idea is to guess the number picked, each time after pick a number, will be told the result of this number, so that you can know which part to go then.
+ 
  Math problem:
  ***** change it into long *****
  
