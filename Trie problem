@@ -10,4 +10,14 @@
                                       node.val = c;
                                   }
                               }
-2. 
+    For add operation, just build a new trienode as root, check each char whether in the children of the root, if not then build a new TrieNode and make the pointer to the new node, else just make the pointer to the node
+    after adding all the char in the string, make the flag isWord true
+    For search operation, just after build the root, then if root.children[char-'a']==null then false.if all the char in this word has been checked already, then return the isWord.
+    
+2. Add and Search Word - Data structure design(Trie version)O(word.length)
+    build a TrieNode class, then as the same.
+    for search part, useing DFS, if char is '.', then check whether 26 character has one in the children, if char is not '.', then check if char c is in children.
+    
+3. 
+    
+    
