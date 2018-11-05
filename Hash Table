@@ -44,3 +44,7 @@
 14. Evaluate Reverse Polish Notation O(n):
         Idea is to use a stack to record item until find a opertor, then pop out the first two element to do the operation, then push them into the stack.
 
+15. Basic Calculator:O(n)
+        idea is the same with 14, then use a stack to record the number in the parenthesis, others just use operator to calculate the result.
+        do not forget the last number which is need be added to the result so far.
+16.
