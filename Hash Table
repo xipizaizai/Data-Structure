@@ -47,4 +47,8 @@
 15. Basic Calculator:O(n)
         idea is the same with 14, then use a stack to record the number in the parenthesis, others just use operator to calculate the result.
         do not forget the last number which is need be added to the result so far.
-16.
+        
+16.Flatten Nested List Iterator:O(n)
+        Idea is we push all the nestedList into the stack from back to front, so when we pop the stack, it returns the very first element. Second, in the hasNext() function, we peek the first element in stack currently, and if it is an Integer, we will return true and pop the element. If it is a list, we will further flatten it. 
+        
+        
