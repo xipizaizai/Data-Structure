@@ -30,3 +30,9 @@
             If those two issue only occur one, then return that one,
             If both of them are occur, then return the multiple parents one(should be the first edge which results in "multiple parents" issue)
       
+4. Is Graph Bipartite?O(n)
+      graph bipartite means  if we can split it's set of nodes into two independent subsets A and B such that every edge in the graph has one node in A and another node in B.
+      Then we use color method, we want to color nodes into two colors: red(1) blue(-1) when initialized, all are 0
+      Using BFS, to find whether two adjacent nodes are in the same color, then false
+      else true;
+      
