@@ -7,3 +7,26 @@
 
 2.  Valid Square:
       idea is to use the property of a square, diagonal length = sqrt(2)*side.
+
+3. Union Find problem:
+
+      3.1 Redundant Connection(undirected graph):
+            Using Union find, build a parent array which initialize them in -1. Then use find method, if they are the same ,then cycle find. else parent[find(x)]=find(y)
+                                    int u = find(sets, edge[0]);
+                                    int v = find(sets, edge[1]);  
+                                    if(u == v) // cycle find
+                                        return edge;
+                                    sets[u] = v;
+            Find method:
+                  public int find(int[] sets, int v) {
+                        return sets[v] == 0 ? v : find(sets, sets[v]);
+                  }
+      3.2 Redundant Connection II(directed graph):
+            Using union find, there may be two situations: 1. cycle issue. 2. have two parent issue
+            to find 1:
+                  use union find, if they have same answer, then cycle find, then record the edge which cause cycle
+            to find 2:
+                  if no cycle find, but if find()!=itself, then means it have other parent, it maybe cause multiple parents issue. record the edge(which is its parent)
+            If those two issue only occur one, then return that one,
+            If both of them are occur, then return the multiple parents one(should be the first edge which results in "multiple parents" issue)
+      
