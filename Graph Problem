@@ -53,3 +53,15 @@
                                 status[i]=1;
                                 return true;
                             }
+6. Reconstruct Itinerary:O(Nlogk)
+      idea is use a hashmap with the value is priorityqueue, which in increasing order
+      then start from "JKF", find its adjacents and do it recursively using stack to store the element.
+      Then use linkelist to store the stack.poll() in reverse order using add(0,stack.poll())
+      it kinds like DFS but do it in iterative way.
+      
+                            stack.push("JFK");
+                            while (!stack.empty()){
+                                while (targets.containsKey(stack.peek()) && !targets.get(stack.peek()).isEmpty())
+                                    stack.push(targets.get(stack.peek()).poll());
+                                route.add(0, stack.pop());
+                            }
