@@ -1,0 +1,6 @@
+1. Encode and Decode TinyURL:
+    Using hashcode method to calculate the code for the string and store it in the map as key
+    Encode just return the hashcode
+    Decode need use the hashcode to find the value of this code
+    
+2.
