@@ -36,3 +36,20 @@
       Using BFS, to find whether two adjacent nodes are in the same color, then false
       else true;
       
+5. Find Eventual Safe States:O(V+E)    
+      graph which is the same as find cycle, if start with this node and will lead to a circle, then this node is not safe.
+      for DFS part, we need some optimization, use color array to denote three status: unvisited, safe, unsafe
+      When we travel a path,we mark the node with 2 which represents having been visited,and when we encounter a node which results in a cycle,we return false,all node in the path stays 2 and it represents unsafe.
+      And in the following traveling,whenever we encounter a node which points to a node marked with 2,we know it will results in a cycle,so we can stop traveling.
+      On the contrary,when a node is safe,we can mark it with 1 and whenever we encounter a safe node,we know it will not results in a cycle.
+      
+                              public boolean helper(int[][]graph, int i, int[]status){
+                                if(status[i]!=0) 
+                                    return status[i]==1;
+                                status[i]=2;
+                                for(int adj:graph[i]){
+                                    if(!helper(graph,adj,status)) return false;
+                                }
+                                status[i]=1;
+                                return true;
+                            }
