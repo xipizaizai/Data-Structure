@@ -9,7 +9,7 @@ Inheritance can be defined as the process where one class acquires the propertie
 The class which inherits the properties of other is known as subclass (derived class, child class) and the class whose properties are inherited is known as superclass (base class, parent class).
 
 ***** multiple inheritance ******
-one class inheriting from more super classes
+one class inheriting from more super classes, java does not support multiple inheritance!!
 
   2.1 Extends keyword
   
@@ -34,6 +34,7 @@ one class inheriting from more super classes
   Like methods, a constructor also contains collection of statements(i.e. instructions) that are executed at time of Object creation.
   When is a Constructor called ?
   Each time an object is created using new() keyword at least one constructor (it could be default constructor) is invoked to assign initial values to the data members of the same class.
+  
   There are 2 type of Constructor:
   1. No-argument constructor: A constructor that has no parameter is known as default constructor. If we don’t define a constructor in a class, then compiler creates default constructor(with no arguments) for the class. And if we write a constructor with arguments or no-argument then compiler does not create default constructor.
   
