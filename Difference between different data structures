@@ -4,10 +4,26 @@
 2. HashMap allows one null key and multiple null values whereas Hashtable doesn’t allow any null key or value.
 3. HashMap is generally preferred over HashTable if thread synchronization is not needed
 
+******** HashMap vs TreeMap:********
+
+TreeMap is an example of a SortedMap, which means that the order of the keys can be sorted, and when iterating over the keys, you can expect that they will be in order.
+
+HashMap on the other hand, makes no such guarantee. Therefore, when iterating over the keys of a  HashMap, you can't be sure what order they will be in.
+
+HashMap will be more efficient in general, so use it whenever you don't care about the order of the keys.
+
+****** ArrayList vs Array******
+
+The biggest difference is in the idea of direct access Vs sequential access. Arrays allow both; direct and sequential access, while lists allow only sequential access. And this is because the way that these data structures are stored in memory.
+
+The structure of the list doesn’t support numeric index like an array is.
+
 ****** ArrayList vs LinkedList******
 
 1. Insertions are easy and fast in LinkedList as compared to ArrayList because there is no risk of resizing array and copying content to new array if array gets full which makes adding into ArrayList of O(n) in worst case, while adding is O(1) operation in LinkedList in Java. ArrayList also needs to be update its index if you insert something anywhere except at the end of array.
+
 2. Removal also better in LinkedList than ArrayList due to same reasons as insertion.Remove an element in ArrayList is O(n)
+
 3. LinkedList has more memory overhead than ArrayList because in ArrayList each index only holds actual object (data) but in case of LinkedList each node holds both data and address of next and previous node.
 4. Both LinkedList and ArrayList require O(n) time to find if an element is present or not. However we can do Binary Search on ArrayList if it is sorted and therefore can search in O(Log n) time.
 
