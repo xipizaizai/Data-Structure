@@ -1,0 +1,5 @@
+1. Queue Reconstruction by Height: O(nlogn)
+    This question is trick, first because the queue is sorted by the height, then first sort all the array in height decending order, which is higher people will be in the front of queue, if the height is the same, then sort the # of people in ascending order.
+    Because rest of the array, people are shorter, then need resort the array based on the second index of each tuple.
+    
+2. 
