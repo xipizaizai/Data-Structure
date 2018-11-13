@@ -37,5 +37,9 @@ String problem:
         use the API of string.indexOf(string) which will return the first index that appear string in origin string, else return -1
         if return of that is not 0 then induct the prefix length by one.
         The time complexity of it is first sort cost nlogn+m*indexOf cost O(m*n)= O(m*m*n)
-    3. 
+    3. Longest Absolute File Path:O(n)
+        use of string.split() && string.replaceAll(), using stack to get upper level's length
+        update the max length each time 
+    4. 
+        
     
