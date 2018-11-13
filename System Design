@@ -3,4 +3,13 @@
     Encode just return the hashcode
     Decode need use the hashcode to find the value of this code
     
-2.
+2. Peeking Iterator：
+    Using Iterator class interface methods: next() and hasNext()
+    peek(): return the next number without moving the iterator
+    next(): return the next number with moving the iterator to the next number
+    hasNext(): return whether next number is null or not null
+    
+    Follow up:
+    To accomodate all the generic type, maybe there will have null in the input, then you need to have a boolean type to record whether there is no element in the rest
+    
+3. 
