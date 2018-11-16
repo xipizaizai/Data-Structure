@@ -54,5 +54,8 @@
 17.132 Pattern:O(n)
         Idea is to use a stack to track the min and max, when find a number which is greater than last min and smaller than last max. using stack make true the order of the i,j and k. 
 
-
+18. Exam Room:seat:O(logn) leave:O(n)
+        Idea is use a priorityqueue(maxheap) to track the max distance interval each time when seat a person.insert the person into the middle of the interval.
+        when leave, find the two interval this person in and merge into a larger interval, push back to the heap.
+        
         
