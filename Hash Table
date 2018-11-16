@@ -50,5 +50,9 @@
         
 16.Flatten Nested List Iterator:O(n)
         Idea is we push all the nestedList into the stack from back to front, so when we pop the stack, it returns the very first element. Second, in the hasNext() function, we peek the first element in stack currently, and if it is an Integer, we will return true and pop the element. If it is a list, we will further flatten it. 
-        
+
+17.132 Pattern:O(n)
+        Idea is to use a stack to track the min and max, when find a number which is greater than last min and smaller than last max. using stack make true the order of the i,j and k. 
+
+
         
