@@ -61,5 +61,8 @@
 19.Hand of Straights:O(nlogn)
         Idea is to use treeMap, which can order the map by the key. Then start with the keyset, find whether there are enough consecutive card left, if so, cut off # of start cards for rest of the consecutive cards.
 
-20.
+20.Contiguous Array：O(n)
+        Idea is the same as store the presum of the array, store the difference between number of zeros and ones
+        next time when meet another same difference then update the length
+        
         
