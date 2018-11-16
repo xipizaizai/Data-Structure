@@ -58,4 +58,8 @@
         Idea is use a priorityqueue(maxheap) to track the max distance interval each time when seat a person.insert the person into the middle of the interval.
         when leave, find the two interval this person in and merge into a larger interval, push back to the heap.
         
+19.Hand of Straights:O(nlogn)
+        Idea is to use treeMap, which can order the map by the key. Then start with the keyset, find whether there are enough consecutive card left, if so, cut off # of start cards for rest of the consecutive cards.
+
+20.
         
