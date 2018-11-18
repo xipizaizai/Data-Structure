@@ -13,4 +13,8 @@
 三. In-place problem:
     1. Game of Life:O(MN)
       Idea is that you need to calculate the circling 8 element to see how many lives, but inplace update will change it, then think about when the live node changed, make it a number when later you can recognize that a live node before. then use 1,2,3 which 1,3 represents live node and 2 represent dead node. because later can mod by 2. then 2 represent the node before is live node but changed to dead node, 3 represent the node before is dead node but changed to live node.
-     
+    
+    2. Flipping an Image:O(n^2)
+      Idea is that you can do it inplace, first swap each row in the matrix, then invert it at the last move.
+    
+    
