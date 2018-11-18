@@ -14,4 +14,7 @@
 4. The Skyline Problem：O(nlogn)
     idea is to sort all start node of a building and end node of a building with their height. set the start height negative, the end height positive. use a priorityqueue(max heap) to record the height, when changed, record that start and height to the result. why use max heap? because when there are overlap buildings,only care about the highest one.
 
-5. 
+5. Merge k Sorted Lists:O(nlogk)
+    idea is to use a min heap which has size of K. each time pop the node and add its not null node.next into the heap.create a dummy node as the new start of a final linkedlist, pop the node from the heap and add it into the new linkedlist
+
+
