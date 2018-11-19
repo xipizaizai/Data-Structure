@@ -68,5 +68,12 @@
 20.Contiguous Array：O(n)
         Idea is the same as store the presum of the array, store the difference between number of zeros and ones
         next time when meet another same difference then update the length
-        
+
+21.Palindrome Pairs:O(length_of_longest_word^2 * words.length)
+        Idea is use hashMap to store the word's index. There are four cases:
+        case 1: words contains "", then it can be pair with palindromes in words
+        case 2: palindrome pairs which is reverse of another
+        case 3 : s1[0:cut] is palindrome and s1[cut+1:] = reverse(s2) => (s2, s1)
+        case 4 : s1[cut+1:] is palindrome and s1[0:cut] = reverse(s2) => (s1, s2)
+
         
