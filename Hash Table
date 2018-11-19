@@ -54,6 +54,10 @@
 17.132 Pattern:O(n)
         Idea is to use a stack to track the min and max, when find a number which is greater than last min and smaller than last max. using stack make true the order of the i,j and k. 
 
+18. Daily Temperatures:O(n)
+        The idea is to find the first element which is greater than the element. Then wen can use a stack to track, when the element is not greater than the element on the top of the stack, then keep adding into the stack. If greater, then pop the element which is smaller than right now until stack is empty. Then get the distance 
+
+
 18. Exam Room:seat:O(logn) leave:O(n)
         Idea is use a priorityqueue(maxheap) to track the max distance interval each time when seat a person.insert the person into the middle of the interval.
         when leave, find the two interval this person in and merge into a larger interval, push back to the heap.
