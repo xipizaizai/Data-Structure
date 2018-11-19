@@ -34,3 +34,8 @@
       idea is to guess the number which can be minimum cost but guarantee the win.
       If guarantee the win, for the max means whenever you choose a number, the feedback is always bad and therefore leads you to a worse branch.
       Min that can minimize your total cost in those all win situations.
+      
+7. Perfect Squares:O(n*sqrt(n))
+      Idea is using Dynamic programming, DP[i] denotes the least number of square sum to i, then 
+                        DP[i]=min(dp[i],dp[i-j*j]+1)
+      
