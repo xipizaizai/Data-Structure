@@ -75,5 +75,19 @@
         case 2: palindrome pairs which is reverse of another
         case 3 : s1[0:cut] is palindrome and s1[cut+1:] = reverse(s2) => (s2, s1)
         case 4 : s1[cut+1:] is palindrome and s1[0:cut] = reverse(s2) => (s1, s2)
+22.Decode String:O(n)
+        There are two situations in this kind of questions:
+                1. number is in the head of chars
+                2. number is at the end of chars
+        for 1:
+                need two stacks to maintain this question, one for numbers, one for strings
+                each time when occur '(' or '[': then push "" into the stack
+                when occur ')' or ']' then means need to multiply the chars
+        for 2:
+                need only one stack is fine:
+                when meet '(', push "" into the stack
+                when meet '}', which denotes that the number is known, then multiply it.
+         For the number part, use string to store will be more easy because no need to multiply 10, just use Interger.parseInt(num) then can get the correct number.
 
+       
         
