@@ -15,6 +15,9 @@
 5. Minimum Window Substring:O(n)
     The idea is the same with minimum size subarray sum, use two pointers, first have a map to record all the words need to be contained, then move fast pointer when all the words are contained, move slow until not all the words contained, update the minimum length. then keep moving fast to find the next state when all words contained.
 
-6. 
+6. Backspace String Compare:O(n)+O(1)
+    The idea is that using two pointers to firstly check that how many '#'has from the end of the string to the front, then when you meet a char, if there are '#' available, then you can skip that char, or you have to see whether the char in S is the same as the char in T
+
+
 
     
