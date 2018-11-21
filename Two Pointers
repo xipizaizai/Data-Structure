@@ -18,6 +18,10 @@
 6. Backspace String Compare:O(n)+O(1)
     The idea is that using two pointers to firstly check that how many '#'has from the end of the string to the front, then when you meet a char, if there are '#' available, then you can skip that char, or you have to see whether the char in S is the same as the char in T
 
+7. Backspace String Compare :O(n)
+    Idea is that keep moving pointers from the end of the string, and find the next possible char in the string, when occur a '#', then increase the skip, when occur a char, then decrease a skip. if no skip left, then break
+    when two pointers are break,there maybe two char, check whether they are the same, or maybe one is finished
+
 
 
     
