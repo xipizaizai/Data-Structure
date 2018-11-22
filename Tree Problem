@@ -39,5 +39,9 @@ Worst case:O(mn)
       the idea is that get the maximum left child length and maximum right child length
       so for helper fuction, return the maxmum of (left,right)+1 to the parent node.
       then the final result is the maximum through all child.
-10.
+10.Count Complete Tree Nodes:O((logn)^2)
+      A fully completed tree has node number: count = 2 ^ depth - 1
+Compare left height and right height, if equal, use the formular, otherwise recurvisely search left and right at next level
+The search pattern is very similar to binary search, the difference of heights ethier exsits in left side, or right side
+Due to the reason stated in point 3, the time complexity is h ^ 2, there is h times for each level, and h times for calculating height at each level
 
