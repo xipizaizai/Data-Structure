@@ -30,16 +30,22 @@
         using stack to store the opposite char and check
 
 String problem:
-    1. Reverse Words in a String:
-        take care of leading blank spaces and using s.trim().split("\\s+")
-    2. Longest Common Prefix:O(m*m*n)
-        First sort the array of string, make the perfix in order, then check the first one with the last one,check in worst case of (length of fist string)time.
-        use the API of string.indexOf(string) which will return the first index that appear string in origin string, else return -1
-        if return of that is not 0 then induct the prefix length by one.
-        The time complexity of it is first sort cost nlogn+m*indexOf cost O(m*n)= O(m*m*n)
-    3. Longest Absolute File Path:O(n)
-        use of string.split() && string.replaceAll(), using stack to get upper level's length
-        update the max length each time 
-    4. 
+
+1. Reverse Words in a String:
+    take care of leading blank spaces and using s.trim().split("\\s+")
+        
+2. Longest Common Prefix:O(m*m*n)
+    First sort the array of string, make the perfix in order, then check the first one with the last one,check in worst case of (length of fist string)time.
+    use the API of string.indexOf(string) which will return the first index that appear string in origin string, else return -1
+    if return of that is not 0 then induct the prefix length by one.
+    The time complexity of it is first sort cost nlogn+m*indexOf cost O(m*n)= O(m*m*n)
+        
+3. Longest Absolute File Path:O(n)
+    use of string.split() && string.replaceAll(), using stack to get upper level's length
+    update the max length each time 
+        
+4.  Repeated String Match:O(N*(M+N))
+    Idea is to create a new string which contains length of (B.LENGTH/A.LENGTH * A.length) string. and then check whether this contains B,if not then add one more A to the string to check. then it is count=1 count<B.length/A.length+2;count++
+        
         
     
