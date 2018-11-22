@@ -1,0 +1,10 @@
+1.  My Calendar I:
+      Idea is use a list which contains those time intervals,check whether the new interval is overlap with any interval in the list. if so, then return false;
+      overlap situation:    Math.max(interval[0], start) < Math.min(interval[1], end)
+      
+2.  My Calendar II:
+      Idea is the same with I but to check whether it is the second time overlap, then when it is overlap with any interval in the list, then check whether this overlapped part is already overlapped before. If so, then return false;
+            if(Math.max(interval[0], start) < Math.min(interval[1], end)){ //overlap occur
+                if(overlap.book(Math.max(interval[0], start),Math.min(interval[1], end)) == false) 
+                    return false;
+3. 
