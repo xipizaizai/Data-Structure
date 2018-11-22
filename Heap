@@ -17,4 +17,9 @@
 5. Merge k Sorted Lists:O(nlogk)
     idea is to use a min heap which has size of K. each time pop the node and add its not null node.next into the heap.create a dummy node as the new start of a final linkedlist, pop the node from the heap and add it into the new linkedlist
 
-
+6. Minimum Cost to Hire K Workers:O(nlogn+nlogk)
+    So we sort all workers with their expected ratio, and pick up K first worker. Now we have a minimum possible ratio for K worker and with their total quality. 
+    As we pick up next worker with bigger ratio, we increase the ratio for whole group. Meanwhile we remove a worker with highest quality so that we keep K workers in the group. 
+    We calculate the current ratio * total quality = total wage for this group.We redo the process and we can find the minimum total wage. Because workers are sorted by ratio of wage/quality.For every ratio, we find the minimum possible total quality of K workers.
+    
+7. 
