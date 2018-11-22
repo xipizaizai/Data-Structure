@@ -38,4 +38,10 @@
 7. Perfect Squares:O(n*sqrt(n))
       Idea is using Dynamic programming, DP[i] denotes the least number of square sum to i, then 
                         DP[i]=min(dp[i],dp[i-j*j]+1)
-      
+
+8. Longest Line of Consecutive One in Matrix:O(mn)
+      Idea is to have a 3-D dp array, which for 4 directions:
+            dp[i][j][0]~dp[i][j][4]
+      first initialize each with 1, if they have consecutive one, then plus one
+      lastly, find the maximum throught the four of them.
+
