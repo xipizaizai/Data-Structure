@@ -17,4 +17,8 @@
     2. Flipping an Image:O(n^2)
       Idea is that you can do it inplace, first swap each row in the matrix, then invert it at the last move.
     
+    3. RLE Iterator:O(n) for next
+      Idea is that we search in place, no need extra memory space, we have two pointers: one for keep track the index, another is to keep track of the number of the needed element left. if the number left+it want >all it get, then move on to the next available elements.
+     
+    
     
