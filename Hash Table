@@ -92,5 +92,11 @@
 23. Fruit Into Baskets:O(n)
         Idea is to use a hashMap and track the size of the map, the problem is the same as finding the longest length with two distinct number.
         moving the right pointer when the size is not greater than 2, then move the left pointer if the size is greater than 2
+
+24. Bulls and Cows:O(n)
+        use int map to store their frequency based on their index, when find two char equal, then bull++
+        else if find map[secret[i]]>0 then denotes that guess has this number then cow++ then map[secret[i]]--
+        else if find map[guess[i]]<0 then demotes that secret has this number then cow++;then map[secret[i]]++
+
         
         
