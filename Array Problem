@@ -20,5 +20,9 @@
     3. RLE Iterator:O(n) for next
       Idea is that we search in place, no need extra memory space, we have two pointers: one for keep track the index, another is to keep track of the number of the needed element left. if the number left+it want >all it get, then move on to the next available elements.
      
-    
+    4. Circular Array Loop:O(n)time+O(1)space
+      Idea is that we start from each index and find whether there will lead to a cycle loop for this index, we change the already been index to 0. when occur that 0 in the next loop then check whether the current index == i then means we go back to where we begin.
+      Attention we need a 
+                if (nums[cur] == 0) continue; because there is no 0 exists at the begining, then when occur a zero, it must be the loop before.Or it will always be true
+                
     
