@@ -24,5 +24,7 @@
       Idea is that we start from each index and find whether there will lead to a cycle loop for this index, we change the already been index to 0. when occur that 0 in the next loop then check whether the current index == i then means we go back to where we begin.
       Attention we need a 
                 if (nums[cur] == 0) continue; because there is no 0 exists at the begining, then when occur a zero, it must be the loop before.Or it will always be true
-                
+      Also what is tricky part is how to deal with position index and negative index?
+        int index = nums[cur] > 0 ? ((cur + nums[cur]) % len) : (len - Math.abs((cur + nums[cur]) % len)) % len;
+       
     
