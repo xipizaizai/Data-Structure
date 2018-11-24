@@ -47,5 +47,14 @@ String problem:
 4.  Repeated String Match:O(N*(M+N))
     Idea is to create a new string which contains length of (B.LENGTH/A.LENGTH * A.length) string. and then check whether this contains B,if not then add one more A to the string to check. then it is count=1 count<B.length/A.length+2;count++
         
-        
+5. Sentence Screen Fitting:O(N)
+    Idea is really tricky, because the problem is need us to fit all the sentence into the screen without split a word.So if the start point of a row is in the middle of a word(not the space), then we need to backward the start point to the place where the space before that is a space.
+                                 if (s.charAt(start % l) == ' ') {
+                                        start++;
+                                    } else {
+                                        while (start > 0 && s.charAt((start-1) % l) != ' ') {
+                                            start--;
+                                        }
+                                    }
+
     
