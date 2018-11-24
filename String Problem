@@ -57,4 +57,7 @@ String problem:
                                         }
                                     }
 
-    
+6. Swap Adjacent in LR String:O(N)
+    Idea is kind of tricky, just move 'L' or 'R' to the another side of 'X', so remove all the 'X' from the two string, the rest of the two string should be the same.
+    Then the number of L and the number of R in two string should be the same because the first condition.
+
