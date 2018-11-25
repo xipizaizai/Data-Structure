@@ -31,28 +31,60 @@
               add the rest of l1 into final list
         while(l2 is left)
               add the rest of l2 into final list
+              
 5. Remove duplicate node in the LinkedList:
         if not detect a duplicate:
          pointer = pointer.next
         if detect a duplicate:
          move the "fast" pointer to the last one of the duplication and let the "pre" pointer
          point to the next node of the "fast" pointer
+         
 6. Intersection of Two LinkedList:
         Two ListNode "a","b"
         if they are not null, then you can move them, if either of them comes to the tail of the list,
         move them to the head of another linkedlist. Then they must come to the same point which is either the null
         point or the not null point.
+        
 7. Swap nodes in pairs:
         Do it recursively, think it from the smallest part of the question
         1->2->3->4
         after swap the 1->2, 1->rest of the part which is swapped already
+        
 8. Deepcopy a Linkelist with random pointer:
         Using a Map to store head & head.random
         create a new linkedlist
         create a new node, get its val & random using map
+        
 9. Rotate List:
         find the node which one to cut the linked list and connect it to the head,
         find the after tail and connect to the Null
-10.Add two NumbersI:
+        
+10. Add two NumbersI:
         Build a new linkedList and each time add two number on both linkedList and to see if there are any carry.
-11.
+        
+11.Reverse Linked List:
+        1.  use recursive method:
+        
+                public ListNode reverseList(ListNode head) {
+                        if(head==null || head.next==null)
+                                return head;
+                        ListNode nextNode=head.next;
+                        ListNode newHead=reverseList(nextNode);
+                        nextNode.next=head;
+                        head.next=null;
+                        return newHead;
+                  }
+        2.  use iterative methond:
+        
+                public ListNode reverseList(ListNode head) {
+                        if(head==null||head.next==null) return head;
+                        ListNode pre=null;
+                        ListNode cur=head;
+                        while(cur!=null){
+                            ListNode temp= cur.next;
+                            cur.next=pre;
+                            pre=cur;
+                            cur=temp;
+                        }
+                        return pre;
+                 }
