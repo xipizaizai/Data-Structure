@@ -1,3 +1,10 @@
+binarySearch(object[ ], object key);
+
+如果key在数组中，则返回搜索值的索引；否则返回-1或者”-“(插入点)。插入点是索引键将要插入数组的那一点，即第一个大于该键的元素索引。
+不存在时由1开始计数； 
+存在时由0开始计数。
+
+
 1. Find Peak index in mountain array:
          if mid element is the peak, then return;
          else:
