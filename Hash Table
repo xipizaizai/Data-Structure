@@ -101,6 +101,9 @@
 25.Fraction to Recurring Decimal:
         Idea is to use a hashmap to store the num for current and to see whether there is already exist in map->recuring found. The map is storing the value with the index where to put the parenthesis into. then when you find that num for current is 0 then means it is divisible, otherwise, it is not, then find the recurring index and add parenthesis to the stringBuilder.
         
+26. Sentence Similarity:O(n)
+        Idea is to use a hashMap: key is the string, value is a set of strings which similiar with the key.
+        After storing all this pairs, just check when two string is not equal, then check whether there are appear in the map.
 
         
         
