@@ -5,3 +5,7 @@
     The answer to this is:length of the entire string - number of times of the maximum occurring character in the string
     Given this, we can apply the at most k changes constraint and maintain a sliding window such that:
         (length of substring - number of times of the maximum occurring character in the substring) <= k
+
+2. Longest Substring with At Most K Distinct Characters:O(N)
+    Idea is that we use sliding window to have the map to record the frequency of each char, another variable to record how many distinct number has already been, while there are more than K distinct number already, we move the start pointer and decrease their frequency in the map, until we find the distinct number has not more than k, then we calculate the maxlen.
+
