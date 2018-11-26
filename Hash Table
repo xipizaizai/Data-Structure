@@ -98,5 +98,9 @@
         else if find map[secret[i]]>0 then denotes that guess has this number then cow++ then map[secret[i]]--
         else if find map[guess[i]]<0 then demotes that secret has this number then cow++;then map[secret[i]]++
 
+25.Fraction to Recurring Decimal:
+        Idea is to use a hashmap to store the num for current and to see whether there is already exist in map->recuring found. The map is storing the value with the index where to put the parenthesis into. then when you find that num for current is 0 then means it is divisible, otherwise, it is not, then find the recurring index and add parenthesis to the stringBuilder.
+        
+
         
         
