@@ -45,3 +45,16 @@
       first initialize each with 1, if they have consecutive one, then plus one
       lastly, find the maximum throught the four of them.
 
+9. Minimum Swaps To Make Sequences Increasing:O()
+      Idea is using dynamic programming to get the the minimum swaps, using no_swap and swap to record,
+            no_swap[i]:  from 0 to i,the min number of swap when you choose not swap in ith index.
+            swap[i]:  from 0 to i,the min number of swap when you choose to swap in ith index.
+            
+           if the array is already in ascending order:
+            you may swap and not swap:
+                  no_swap[i] = no_swap[i-1];
+                  swap[i] = swap[i-1]+1;
+            if the array is need to be swap:
+                  no_swap[i] = Math.min(no_swap[i],swap[i-1]);
+                  swap[i] = Math.min(swap[i], no_swap[i-1]+1);
+        
