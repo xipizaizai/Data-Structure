@@ -74,3 +74,9 @@
                                    while(root.right!=null)
                                           root = root.right;
                                    root.right = right;
+                                   
+12. Longest Increasing Path in a Matrix:O(mn)
+       Idea is that DFS + memorization, start from each cell and search for their neighbors, use the cache to store the final result of that cell, then keep moving, when the cell is out of boundry or just no tin increasing order, then skip, if not, then if cache has already get the result, just use that.
+       then return that final length to the main function and use a global variable to record the maximum one.
+
+13.
