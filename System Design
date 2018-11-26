@@ -12,4 +12,7 @@
     Follow up:
     To accomodate all the generic type, maybe there will have null in the input, then you need to have a boolean type to record whether there is no element in the rest
     
-3. 
+3. Insert Delete GetRandom O(1)：
+    Idea is to use a hashmap and a arrayList to do all the operations, hashmap key is the interger, and the value is its index,then everytime when remove the element, swap this index with the last one in the arraylist, update the element in map also.
+
+4. 
