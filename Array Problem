@@ -30,4 +30,3 @@
     5. Battleships in a Board:O(n)
       Idea is because the battleship can only be put horizontal or vertical. then for each cell with 'X', check whether there are 'X' in the cell left or the cell up. If so, then continue, if not then count++;
     
-    
