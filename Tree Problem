@@ -45,3 +45,7 @@ Compare left height and right height, if equal, use the formular, otherwise recu
 The search pattern is very similar to binary search, the difference of heights ethier exsits in left side, or right side
 Due to the reason stated in point 3, the time complexity is h ^ 2, there is h times for each level, and h times for calculating height at each level
 
+11.Split BST:O(logn)
+      Idea is that we use recursion, each time we split the root.left or root.right, then we can know which part we can merge with the root part,do it recursively until we find the target
+      https://leetcode.com/problems/split-bst/solution/
+
