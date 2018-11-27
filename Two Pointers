@@ -27,6 +27,11 @@
     Here is the idea how to lexicographical order the two string:
         str.compareTo(max_str) < 0 means str is smaller lexicographical order!
 
-
-
+9. Expressive Words：O(string.length()*word.length)
+    Idea is use two pointers, check whether it can satisfy the two situations: 
+                    1. they are exactly same
+                    2. in S there are at least 3 same word in each group which
+                if (i >= 2 && S.charAt(i) == S.charAt(i - 1) && S.charAt(i - 1) == S.charAt(i - 2));
+                if (i > 0 && i < n - 1 && S.charAt(i - 1) == S.charAt(i) && S.charAt(i) == S.charAt(i + 1));
+10.
     
