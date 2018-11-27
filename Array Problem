@@ -26,5 +26,8 @@
                 if (nums[cur] == 0) continue; because there is no 0 exists at the begining, then when occur a zero, it must be the loop before.Or it will always be true
       Also what is tricky part is how to deal with position index and negative index?
         int index = nums[cur] > 0 ? ((cur + nums[cur]) % len) : (len - Math.abs((cur + nums[cur]) % len)) % len;
-       
+    
+    5. Battleships in a Board:O(n)
+      Idea is because the battleship can only be put horizontal or vertical. then for each cell with 'X', check whether there are 'X' in the cell left or the cell up. If so, then continue, if not then count++;
+    
     
