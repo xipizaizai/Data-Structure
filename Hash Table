@@ -108,5 +108,9 @@
 27. Exclusive Time of Functions:O(N)
         Idea is to use the stack to store the int[]{id,time}, when occur a start, just push it into the stack, everytime when occur a end, calculate the time and update the time of that idx: res[idx]+=time, if the stack is not empty, then update the time of that stack.peek() index: res[stack.peek()[0]]-=time
 
-
+28. Unique Word Abbreviation:O(N)
+        Idea is to use a hashmap which for key is the abbreviated string and the value is a set of original strings. If the map contains the abbreviate string then most of them are false, but only one situation is that the original string is the same with value in map and only have this one in the set. then it is true.
+             if(map.containsKey(Abbr(word)) && map.get(Abbr(word)).contains(word) && map.get(Abbr(word)).size()==1) 
+                                return true;
+            
         
