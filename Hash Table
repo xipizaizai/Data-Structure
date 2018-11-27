@@ -105,5 +105,8 @@
         Idea is to use a hashMap: key is the string, value is a set of strings which similiar with the key.
         After storing all this pairs, just check when two string is not equal, then check whether there are appear in the map.
 
-        
+27. Exclusive Time of Functions:O(N)
+        Idea is to use the stack to store the int[]{id,time}, when occur a start, just push it into the stack, everytime when occur a end, calculate the time and update the time of that idx: res[idx]+=time, if the stack is not empty, then update the time of that stack.peek() index: res[stack.peek()[0]]-=time
+
+
         
