@@ -29,7 +29,9 @@
       return the max one which is dp1[nums.length-2] or dp2[nums.length-1]
       
 3.3 House Robber III:O(n)
-      Idea is that you can either steal the root or not steal the root
+      Idea is that you can either steal the root or not steal the root:
+            if steal the current node, then you can not steal the child node of current node
+            else if you not steal the current node, then you can steal the child node or not steal the child node
       each recursion you will get an array of have steal the root or not steal the root
       
                         public int rob(TreeNode root) {
