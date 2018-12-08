@@ -85,4 +85,14 @@
             if the array is need to be swap:
                   no_swap[i] = Math.min(no_swap[i],swap[i-1]);
                   swap[i] = Math.min(swap[i], no_swap[i-1]+1);
-        
+                  
+10. Interleaving String:O(mn)
+      dp[i][j] implies if it is possible to obtain a substring of length(i+j+2).(i+j+2) which is a prefix of s3 s3 by some interleaving of prefixes of strings s1 and s2 having length i+1 and j+1 respectly.
+      whenever the kth index of s3 can match the ith index of s1 or jth index of s2, then it is true.
+
+11.
+       
+       
+       
+       
+       
