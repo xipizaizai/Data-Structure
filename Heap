@@ -22,4 +22,7 @@
     As we pick up next worker with bigger ratio, we increase the ratio for whole group. Meanwhile we remove a worker with highest quality so that we keep K workers in the group. 
     We calculate the current ratio * total quality = total wage for this group.We redo the process and we can find the minimum total wage. Because workers are sorted by ratio of wage/quality.For every ratio, we find the minimum possible total quality of K workers.
     
-7. 
+7. Top K Frequent Words:O(nlogk)
+    Idea is use hashmap to record the frequency and the minheap of size k to record the Top K words,then I need to use LinkedList to output them.
+    
+
