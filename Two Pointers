@@ -36,6 +36,11 @@
 10.Longest Mountain in Array:O(n) with constant space
     Idea is use two pointers, left pointer is used for finding left boundary and right pointer is used for finding the end of the mountain. so much have up-peak-down this pattern. if not then max length is not changed still 0. then the left pointer will be the maximum of end or start+1.
     Start+1 is used for those [2,2,2], no mountain arrays.
-    
+
+10. Moving Zeros/Moving Ones:O(n)
+    Idea is in-place moving all zeros or ones to the end of the array.
+    using two pointers, last is to record the last non-zero element, when occur a non-zero element, then just make the last position non-zero.
+
+11.
 
     
