@@ -24,5 +24,10 @@
     
 7. Top K Frequent Words:O(nlogk)
     Idea is use hashmap to record the frequency and the minheap of size k to record the Top K words,then I need to use LinkedList to output them.
+
+8. Find K Pairs with Smallest Sums: O(klogk)
+    Idea is to use heap to get the top k smallest sum, when occur the sorted arrays, the smallest is first sum of each nums1[i]+nums2[0], everytime, then pop int[]cur pair out, then try nums1[cur[0]]+nums2[cur[1]+1]
+    then the left k pairs in the heap must be the smallest.
     
+
 
