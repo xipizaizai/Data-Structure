@@ -49,3 +49,12 @@ Due to the reason stated in point 3, the time complexity is h ^ 2, there is h ti
       Idea is that we use recursion, each time we split the root.left or root.right, then we can know which part we can merge with the root part,do it recursively until we find the target
       https://leetcode.com/problems/split-bst/solution/
 
+12.Maximum Width of Binary Tree:O(# of nodes)
+      Idea can be DFS or BFS.
+            result = Math.max(result, "last-node-idx"-"first-node-idx"+1);
+            root's idx = i
+            root.left's idx = 2*i
+            root.right's idx = 2*i+1
+      https://leetcode.com/problems/maximum-width-of-binary-tree/description/
+
+      
