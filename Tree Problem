@@ -57,4 +57,9 @@ Due to the reason stated in point 3, the time complexity is h ^ 2, there is h ti
             root.right's idx = 2*i+1
       https://leetcode.com/problems/maximum-width-of-binary-tree/description/
 
+13. Smallest Subtree with all the Deepest Nodes:O(n)
+      Idea is the same with the find the deepest depth of a binary tree, then each level, we can have larget depth between left child or right child. Then go to the larger depth side, when equal then root is the return node,whenever not equal, then recursively goes to the deepest side.
+
+14.
+      
       
