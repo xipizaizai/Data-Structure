@@ -29,4 +29,9 @@
     
     5. Battleships in a Board:O(n)
       Idea is because the battleship can only be put horizontal or vertical. then for each cell with 'X', check whether there are 'X' in the cell left or the cell up. If so, then continue, if not then count++;
+      
+四. Can solve only in one pass:
+    1.  Largest Number At Least Twice of Others:O(N)
+      Idea is that can just check whether the largest number is greater than the second largest number, if so, then it sure greater than others for two times. Then just one pass the num instead of two pass.
+  
     
