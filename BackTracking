@@ -146,6 +146,9 @@ private void backtrack(List<List<Integer>> list, List<Integer> tempList, int [] 
 8. Generate Parentheses:
           classic backtracking problem and can save the step of check it validation. just check the number of close and open bracket
      
-          
+9.Increasing Subsequences:
+    Idea is the same with other backtracking problem, just make sure the increasing order. And need the hashset to avoid duplicate.
+    
+    
           
           
