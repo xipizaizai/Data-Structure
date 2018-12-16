@@ -69,6 +69,9 @@ Due to the reason stated in point 3, the time complexity is h ^ 2, there is h ti
       In this case, root cannot be p's inorder successor, neither can root's left child. So we only need to consider root's right child, thus we move root to its right and check again.
       We continuously move root until exhausted. To this point, we only need to return the res in case 1.
 
+15. Find Leaves of Binary Tree:O(# of nodes)
+      The idea is that everytime: start from the root, find all the leaves from this root and remove them(which is made it null). keep doing this step until the root become null.
+
 
       
       
