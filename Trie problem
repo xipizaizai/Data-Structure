@@ -18,6 +18,10 @@
     build a TrieNode class, then as the same.
     for search part, useing DFS, if char is '.', then check whether 26 character has one in the children, if char is not '.', then check if char c is in children.
     
-3. 
+3. Design Search Autocomplete System:
+O(k*l) for initialize,We need to iterate over ll sentences each of average length k to create the trie for the given set of sentences
+O(p+q+mlogm) 
+    The idea is to use trie to store each sentence and each trieNode also has a map for frequency(hot degree)
+    Use priorityQueue to find the top 3 hottest.
     
     
