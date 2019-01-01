@@ -44,5 +44,9 @@
       Idea is that can just check whether the largest number is greater than the second largest number, if so, then it sure greater than others for two times. Then just one pass the num instead of two pass.
 
 五 
-  1 Image Overlap：
+  1 Image Overlap：O(N^4)
+    Idea is that we check:
+    Move the second image around starting from the bottom right corner to the top left hand corner
+    For each move, see whats the overlap
+    Return the highest value
     
