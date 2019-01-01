@@ -115,4 +115,6 @@
 29. Score of Parentheses:O(N)
         Idea is to use stack to record the string, when occur the ')'.Try to see whether the stack.peek() is '(', if that is then push 1 into the stack, if not, then keep adding the number until meet with a '('.
         
+30. Largest Rectangle in Histogram:O(N)
+        Idea is to use stack, For every bar ‘x’, we calculate the area with ‘x’ as the smallest bar in the rectangle. If we calculate such area for every bar ‘x’ and find the maximum of all areas, our task is done. 
         
