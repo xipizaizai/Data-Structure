@@ -41,7 +41,9 @@
     7. Remove Duplicates from Sorted Array:O(n)
       Idea is that we use two pointers, index is the place the nums are distinct.if meet different nums then index++ and swap the index with the i.
       return index+1 as the length of the final array.
-    
+    8. Rotate Array:O(n)
+      This approach is based on the fact that when we rotate the array k times, k elements from the back end of the array come to the front and the rest of the elements from the front shift backwards.
+      
 四. Can solve only in one pass:
     1.  Largest Number At Least Twice of Others:O(N)
       Idea is that can just check whether the largest number is greater than the second largest number, if so, then it sure greater than others for two times. Then just one pass the num instead of two pass.
