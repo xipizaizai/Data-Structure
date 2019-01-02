@@ -37,7 +37,10 @@
     
     6. First Missing Positive:O(n)
       Idea is that we use two pass the input array, first pass, we put each num into its position. second pass, we check whether the position has the number on it.
-      
+    
+    7. Remove Duplicates from Sorted Array:O(n)
+      Idea is that we use two pointers, index is the place the nums are distinct.if meet different nums then index++ and swap the index with the i.
+      return index+1 as the length of the final array.
     
 四. Can solve only in one pass:
     1.  Largest Number At Least Twice of Others:O(N)
