@@ -41,8 +41,12 @@
     7. Remove Duplicates from Sorted Array:O(n)
       Idea is that we use two pointers, index is the place the nums are distinct.if meet different nums then index++ and swap the index with the i.
       return index+1 as the length of the final array.
+      
     8. Rotate Array:O(n)
       This approach is based on the fact that when we rotate the array k times, k elements from the back end of the array come to the front and the rest of the elements from the front shift backwards.
+      
+    9. Set Matrix Zeroes:O(mn)
+      Idea is that we check each cell, for cell (i,j), if the cell is 0, then make (0,j) and (i,0) 0. then after one pass of the matrix, just check whether (0,j) or (i,0) are 0. if so, then make the whole row or column 0. do not forget to check the (0,0).
       
 四. Can solve only in one pass:
     1.  Largest Number At Least Twice of Others:O(N)
