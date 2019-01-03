@@ -91,3 +91,5 @@
 12. Sort List:O(nlogn)
         Idea is that we use merge sort to sort this unsorted linkedList.
         
+13. Odd Even Linked List:O(# of node)+O(1)
+        Idea is that we use three pointers to traverse the linkedlist, after the even -> odd->null
